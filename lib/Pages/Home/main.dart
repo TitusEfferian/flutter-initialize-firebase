@@ -14,7 +14,7 @@ class PageContent extends StatelessWidget {
           return Text('hello this is login mode, click for log out ${data.data}');
         },),
         onPressed: () {
-          // Provider.of<UserNotifier>(context, listen: false).logout();
+          Provider.of<UserNotifier>(context, listen: false).logout();
           // Provider.of<RealtimeNotifier>(context,listen: false).fetchData();
         },
       ),
